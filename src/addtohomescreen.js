@@ -32,7 +32,7 @@ var _reQueryString = /([\?&]ath=[^&]*$|&ath=[^&]*(&))/;
 var _instance;
 function ath (options) {
 	_instance = _instance || new ath.Class(options);
-
+alert(_instance);
 	return _instance;
 }
 
