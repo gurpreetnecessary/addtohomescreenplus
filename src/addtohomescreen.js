@@ -32,7 +32,7 @@ var _reQueryString = /([\?&]ath=[^&]*$|&ath=[^&]*(&))/;
 var _instance;
 function ath (options) {
 	_instance = _instance || new ath.Class(options);
-alert(_instance);
+	
 	return _instance;
 }
 
@@ -343,6 +343,7 @@ ath.Class = function (options) {
 
 	// check if the app is in stand alone mode
 	if ( ath.isStandalone ) {
+		alert(ath.isStandalone);
 		// execute the onAdd event if we haven't already
 		if ( !this.session.added ) {
 			this.session.added = true;
